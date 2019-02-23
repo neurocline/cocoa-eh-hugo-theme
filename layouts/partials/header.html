@@ -20,12 +20,12 @@
             <a href="/"><div class="name"><h1>{{ .Site.Title }}</h1></div></a>
             <nav>
                 <ul>
-                    {{ if (and (ne (len (where .Site.RegularPages "Section" "blog")) 0) (not (in .Site.Params.exclude_headings "blog"))) }}
-                            <li><a href="/blog/">Blog</a></li>
+                    {{ if (and (ne (len (where .Site.RegularPages "Section" "posts")) 0) (not (in .Site.Params.exclude_headings "posts"))) }}
+                            <li><a href="/posts/">Blog</a></li>
                     {{ end }}
                     {{ range $.Site.Home.Sections }}
                         {{ range first 1 (where .Pages "Section" "ne" "")}}
-                            {{ if (and (ne .Section "blog") (not (in .Site.Params.exclude_headings (lower .Section))))}}
+                            {{ if (and (ne .Section "posts") (not (in .Site.Params.exclude_headings (lower .Section))))}}
                             <li><a href="{{ .Section | urlize | relURL }}">{{ .Section }}</a></li>
                             {{ end }}
                         {{ end }}
