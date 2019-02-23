@@ -10,18 +10,18 @@
 {{ end }}
 
 {{ if .Site.Params.highlightjs }}
-  <script src="{{ .Site.BaseURL }}js/highlight.min.js" defer></script>
+  <script src="/js/highlight.min.js" defer></script>
   {{ range .Site.Params.highlightjslanguages }}
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/{{.}}.min.js" defer></script>
   {{ end }}
 {{ end }}
 
 {{ if .Site.Params.progressively }}
-  <script src="{{ .Site.BaseURL }}js/progressively.min.js" defer></script>
+  <script src="/js/progressively.min.js" defer></script>
 {{ end }}
 
 {{ if .Site.Params.share }}
-  <script src="{{ .Site.BaseURL }}js/social-share-kit.min.js" defer></script>
+  <script src="/js/social-share-kit.min.js" defer></script>
 {{ end }}
 
 {{ if .Site.Params.fathomurl }}

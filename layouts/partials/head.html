@@ -8,6 +8,6 @@
     {{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Site.Title }} - {{ .Title }} {{ end }}
 {{ end }}
 </title>
-<link rel="canonical" href="{{ .Permalink }}">
+<link rel="canonical" href="{{ .RelPermalink }}">
 {{ partial "head_includes.html" . }}
 </head>

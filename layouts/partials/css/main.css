@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Nexa Bold';
-  src: url('{{ .Site.BaseURL }}fonts/Nexa Bold.otf');
+  src: url('/fonts/Nexa Bold.otf');
 }
 
 html, body, div, span, applet, object, iframe,
@@ -728,7 +728,7 @@ kbd {
 /* Fonts */
 
 {{ if not .Site.Params.disablefancyfonts  }}
-.wf-raleway-n4-active body, 
+.wf-raleway-n4-active body,
 .wf-raleway-n4-active div.header nav ul a,
 .wf-raleway-n7-active div.main .content .page-heading,
 .wf-raleway-n2-active div.main .container.f04 .content .num,
